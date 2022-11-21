@@ -18,12 +18,14 @@ create table myinfo(
     constraint fk_userid foreign key(userid) references user(userid)
 );
 
-drop table myinfo;
+drop table post;
+
+
 
 create table post(
 	postnumber int primary key auto_increment,
     postname varchar(300) not null,
-    posttime date not null,
+    posttime datetime not null,
      userid varchar(300),
     constraint fk_userid2 foreign key(userid) references user(userid)
 );
@@ -32,14 +34,14 @@ CREATE TABLE picture(
     picnumber int primary key auto_increment,
     piclike varchar(300),
     piccomment varchar(300),
-    pictime date not null,
+    pictime datetime not null,
     userid varchar(300),
     constraint fk_userid3 foreign key(userid) references user(userid)
 );
 create table comment(
      comment_number int primary key auto_increment,
      comment_info varchar(3000),
-     comment_time date,
+     comment_time datetime,
      userid varchar(300),
     constraint fk_userid4 foreign key(userid) references user(userid)
 );
