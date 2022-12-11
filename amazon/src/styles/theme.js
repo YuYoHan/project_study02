@@ -105,10 +105,10 @@ const lineHeight = {
     xLarge: "28px",
 };
 
+/* ex) theme.palette.primary[300] = "#3AA5DD" */
 export const theme = {
     palette,
     fontsize,
     fontwight,
     lineHeight,
 };
-/* ex) theme.palette.primary[300] = "#3AA5DD" */

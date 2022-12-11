@@ -18,11 +18,11 @@ const GlobalStyles = createGlobalStyle`
     figure, figcaption, footer, header, hgroup,
     main, menu, nav, output, ruby, section, summary,
     time, mark, audio, video {
+        font-size: 100%;
+        font: inherit;
         margin: 0;
         padding: 0;
         border: 0;
-        font-size: 100%;
-        font: inherit;
         vertical-align: baseline;
     }
     /* HTML5 display-role reset for older browsers */
